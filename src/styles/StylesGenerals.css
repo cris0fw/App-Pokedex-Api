@@ -1,0 +1,301 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* MI BARRA DE NAVEGACION  */
+.nav{
+    width: 100%;
+    height: 80px;
+    background-color: #C5C5C6;
+    padding: 16px 50px;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* MI LOGO DE POKEMON */
+.nav__figure{
+   width: 120px;
+}
+
+.nav__logo{
+    width: 100%;
+    height: 100%;
+}
+
+/* CONFIGURANDO ESTILOS DE FORM   */
+.nav__search{
+    width: 290px;
+    height: 37px;
+    padding: 8px 20px;
+    outline: none;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
+.nav__submit{
+    margin-left: 3px;
+    width: 100px;
+    height: 37px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #6057AE;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* el main  */
+.main{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+/* Filtro de busqueda */
+.filtro{
+    width: 20%;
+    height: auto;
+    background-color: #F2F2F2;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+/* GRID de las card de pokemones */
+.grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 350px));
+    gap: 15px;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+/* Lista y su contenedor */
+.card{
+    width: 350px;
+    height: 300px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0 0 3px 0 rgba(0,0,0, .5);
+}
+
+.listaPoke{
+    width: 80%;
+    height: auto;
+    background-color: #fff;
+}
+
+/* Card del pokemon estilos */
+.card__figure{
+    width: 200px;
+    height: 140px;
+}
+
+.card__img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.card__title{
+    width: 100%;
+    margin-top: 10px;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.card__id{
+    align-self: flex-start;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.tipos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.tipo{
+    margin-left: 10px;
+    font-size: 1.2rem;
+    padding: 8px 20px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.cargaMas{
+    width: 100%;
+    margin-top: 25px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.carga{
+    width: 180px;
+    height: 40px;
+    cursor: pointer;
+    background-color: #6057AE;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.grass{
+    background-color: darkgreen;
+}
+
+.poison{
+    background-color: blueviolet;
+}
+
+.fire{
+    background-color: darkorange;
+}
+
+.flying{
+    background-color: darkgray;
+}
+
+.water{
+    background-color:dodgerblue;
+}
+
+.bug{
+    background-color: #4D6228;
+}
+
+.normal{
+    background-color: #423F4F;
+}
+
+.electric{
+    background-color: gold;
+}
+
+.ground{
+    background-color: #714A3D;
+}
+
+.fairy{
+
+}
+
+/* Checkbox filtros  */
+.filtro__title{
+    margin-top: 10px;
+    font-size: 2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+
+.group-type{
+    margin-top: 30px;
+    display: flex;
+    font-size: 1.5rem;
+}
+
+.checkbox-type{
+    margin-right: 10px;
+    width: 16px;
+}
+
+/* INFORMACION DEL POKEMON  */
+.info__pokemon{
+    max-width: 1200px;
+    height: 500px;
+    margin: 0 auto;
+    margin-top: 20px;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 10px 20px;
+}
+
+.poke__id{
+    font-size: 5rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    display: block;
+    color: #4B5983;
+}
+
+.poke__img{
+    width: 400px;
+    object-fit: cover;
+}
+
+.poke__typesname{
+    width: 660px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.poke__title{
+    font-size: 2.7rem;
+}
+
+.pesoAltura{
+    margin-top: 30px;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.estadisticas{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.otrasmas{
+    margin-left: 30px;
+}
+
+/* LOADER */
+.loader__center{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* CONTENEDOR DEL SEARCH  */
+.contenedor-search{
+    max-width: 1200px;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.count{
+    font-size: 1.4rem;
+    font-weight: bold;
+}
